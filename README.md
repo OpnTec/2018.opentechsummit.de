@@ -1,2 +1,2 @@
-# 2016.opentechsummit.net
-Website of OpenTechSummit 2016 
+# 2017.opentechsummit.net
+Website of OpenTechSummit 2017
