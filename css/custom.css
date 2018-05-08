@@ -1,24 +1,28 @@
 .schedule a {
-  color: #ff8700;
+  color: white;
   border: none;
 }
 
 .schedule a:hover {
-  color: #ff8700;
+  color: white;
   text-decoration: none;
   border: none;
 }
 
 .schedule a:active {
-  color: #ff8700;
+  color: white;
   text-decoration: underline;
   border: none;
 }
 
 .schedule a:visited {
-  color: #ff8700;
+  color: white;
   text-decoration: none;
   border: none;
+}
+
+div.schedule-title span.title a.inner-link {
+  color: #B82300;
 }
 
 .tweets-feed {
