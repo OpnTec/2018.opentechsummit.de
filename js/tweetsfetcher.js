@@ -124,7 +124,7 @@ window.onload = (function() {
       }
 
       if(dataset.query) {
-        var query = dataset.query.replace(/\s/gi, '%20').replace(/#/gi, '%23'); //replace spaces and hashtags in URL
+        var query = encodeURI(dataset.query);
       } else {
         query = '';
       }
@@ -151,7 +151,7 @@ window.onload = (function() {
       }
       
       // Create the URL with all the parameters
-      var url = 'http://loklak.org/api/search.json' +
+      var url = 'http://api.loklak.org/api/search.json' +
         '?callback=loklakFetcher.handleData' +
         '&q=' + query +
         '&count=' + options.count +
@@ -170,6 +170,7 @@ window.onload = (function() {
        * @param  {object} data JSON coming from loklak's API
        */
       this.handleData = function(data) {
+        console.log('data ' + data);
         callback(data);
       };
 
