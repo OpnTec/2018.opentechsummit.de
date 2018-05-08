@@ -170,7 +170,6 @@ window.onload = (function() {
        * @param  {object} data JSON coming from loklak's API
        */
       this.handleData = function(data) {
-        console.log('data ' + data);
         callback(data);
       };
 
